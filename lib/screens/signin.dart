@@ -19,7 +19,7 @@ class Signin extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
                Text('Sign In',style: TextStyle(
-                color: Color.fromARGB(255, 92, 3, 92),
+                color: Colors.blueGrey,
                 fontSize: 32,
                 fontWeight: FontWeight.w600,
                 fontFamily: 'Poppins'
@@ -31,7 +31,8 @@ class Signin extends StatelessWidget {
                 Container(
                   height: 50,
                   width: 250,
-                  decoration: BoxDecoration(border: Border.all(color: Color.fromARGB(31, 75, 2, 70))),
+                  decoration: BoxDecoration(border: Border.all(color: Colors.blueGrey),borderRadius: BorderRadius.circular(12
+                  )),
                   child: TextFormField(
                     decoration: InputDecoration(
                       label: Text("Email"),
@@ -45,17 +46,19 @@ class Signin extends StatelessWidget {
                 Container(
                   height: 50,
                   width: 250,
-                  decoration: BoxDecoration(border: Border.all(color: Color.fromARGB(31, 75, 2, 70))),
+                  decoration: BoxDecoration(border: Border.all(color: Colors.blueGrey),borderRadius: BorderRadius.circular(12)),
                   child: TextFormField(
                     decoration: InputDecoration(
                       label: Text("Password"),
                       border: InputBorder.none,
                       
+                      
                     ),
                   ),
                 ),
 
-                Text('Forgot Password',style: TextStyle(
+                SizedBox(height: 5,),
+                Text('    Forgot Password',style: TextStyle(
                   decoration: TextDecoration.underline
                 ),),
                 verticalSpacing(42.0),
@@ -67,7 +70,7 @@ class Signin extends StatelessWidget {
                     
                   ),
                   child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(backgroundColor: Color.fromARGB(255, 92, 3, 92),),
+                    style: ElevatedButton.styleFrom(backgroundColor: Colors.blueGrey,),
                     onPressed: () {
                      
 
@@ -77,7 +80,7 @@ class Signin extends StatelessWidget {
   );
 
                     },
-                    child: Text('Signin',style: TextStyle(color: Colors.white70),)
+                    child: Text('Sign In',style: TextStyle(color: Colors.white70),)
                     ),
                 )
         
